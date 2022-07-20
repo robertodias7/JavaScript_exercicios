@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio do Troco</title>
+    <style>
+        h1 {
+            font-family: sans-serif;
+        }
+        button {
+            padding: 15px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Calculando o Troco</h1>
+    <button onclick="clicar()">Comprar Produto</button>
+
+    <script>
+        function clicar() {
+            var produto = prompt('Que produto você está comprando?')
+            var valor = prompt('Quanto custa o produto que você está comprando?')
+            var valorTotal = prompt(`Qual foi o valor que você deu para pagar o ${produto}`)
+
+
+            alert(`Você comprou um ${produto} que custou R$ ${valor},00. \nDeu R$ ${valorTotal},00 em dinheiro e vai receber R$${valorTotal-valor},00 de troco.\nVolte Sempre!`)
+        }
+    </script>
+</body>
+</html>

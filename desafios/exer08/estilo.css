@@ -1,0 +1,40 @@
+body{
+    background: rgb(111, 177, 244);
+    font: normal 15pt Arial;
+
+}
+
+header{
+    color: white;
+    text-align: center;
+    
+
+}
+
+section{
+    background: white;
+    border-radius: 10px;
+    width: 500px;
+    box-shadow: 3px 3px 3px  rgba(0,0, 0, 0.363);
+    padding: 15px;
+    margin: auto;
+}
+input{
+    color: black;
+    font-style: italic;
+    width: 150px;
+    padding: 15px;
+
+}
+
+div#res {
+    padding: 8px;
+    
+}
+
+footer{
+    color: white;
+    text-align: center;
+    font-style: italic;
+
+}

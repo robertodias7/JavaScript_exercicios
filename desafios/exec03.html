@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Antes e Depois</title>
+    <style>
+        button {
+            font-size: 11pt;
+            padding: 15px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Antes e Depois</h1>
+    <button onclick="clicar()"> Antecessor e Sucessor</button>
+
+    <script>
+        function clicar() {
+            var num = prompt('Digite um número inteiro qualquer')
+            alert(` Antes do ${num}, temos o número ${--num}. \n Depois do ${num+=1},  temos o número ` + ++num + '.\n')
+        }
+    </script>
+</body>
+</html>

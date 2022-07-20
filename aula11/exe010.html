@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Países</title>
+</head>
+    <h1>Verificando Países</h1>
+    Digite seu País: <input type="text" name="txtp" id="txtp">
+    <input type="button" value="Verificar" onclick="clicar()">
+    <div id="res"></div>
+
+    <script>
+        function clicar() {
+            var txtp = document.querySelector('input#txtp')
+            var res = document.querySelector('div#res')
+            var val = txtp.value
+
+            res.innerHTML = `<p>Seu País de origem é <strong>${val}</strong></>`
+
+            if (val == 'Brasil') {
+                res.innerHTML += `<p>Você é <strong>Brasileiro</strong></p>`
+            } else {
+                res.innerHTML += `<p>Você é <strong>Estrangeiro</strong></p>`
+            }
+        }
+    </script>
+<body>
+    
+</body>
+</html>
